@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         UrlList = new ArrayList<String>();
-        UrlList.add("https://images5.alphacoders.com/104/1046568.jpg");
-        UrlList.add("https://images2.alphacoders.com/516/516664.jpg");
-        UrlList.add("https://cdn.sforum.vn/sforum/wp-content/uploads/2021/12/android-studio.png");
-        UrlList.add("https://photo2.tinhte.vn/data/attachment-files/2021/09/5660152_city_road_buildings_188197_3840x2160.jpg");
+        UrlList.add("https://www.cgi.com/sites/default/files/styles/hero_banner/public/space_astronaut.jpg?itok=k2oFRHrr");
+        UrlList.add("https://scitechdaily.com/images/Astronaut-CME-Outer-Space.jpg");
+        UrlList.add("https://www.industry.gov.au/sites/default/files/2022-07/news_-_space_ssu.png");
+        UrlList.add("https://bestlifeonline.com/wp-content/uploads/sites/3/2022/09/shutterstock_360211214.jpg?quality=82&strip=all");
         if(!UrlList.isEmpty()){
             start = 0 ;
             last = UrlList.size() -1;
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                         UrlList.add(url);
                         if (!UrlList.isEmpty()){
                             start = 0;
-                            last = UrlList.size();
+                            last = UrlList.size() - 1;
                             currentPosition = 0;
                         }
                         Toast.makeText(MainActivity.this, "Add successfully!", Toast.LENGTH_LONG).show();
