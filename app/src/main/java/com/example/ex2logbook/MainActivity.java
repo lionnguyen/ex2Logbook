@@ -71,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 binding.inputURL.setText("");
-                binding.imageView.setImageBitmap(null);
             }
         });
 
@@ -80,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String WebUrl = "(https?:\\/\\/.*\\.(?:png|jpg))";
+                
 
                 if (binding.inputURL.getText() != null && binding.inputURL.getText().toString().matches(WebUrl)){
                     String url = binding.inputURL.getText().toString();

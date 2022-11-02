@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="314dp"
-        android:layout_height="240dp"
+        android:layout_width="302dp"
+        android:layout_height="213dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -34,14 +34,14 @@
 
     <EditText
         android:id="@+id/inputURL"
-        android:layout_width="349dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Enter image Url"
         android:inputType="none"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/url"
         tools:ignore="MissingConstraints" />
@@ -75,27 +75,11 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/clearBtn"
-        android:layout_width="140dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#ED2341"
-        android:text="Clear"
-        android:textColor="#EFE5E5"
-        android:textSize="20sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputURL"
-        app:strokeColor="#FFFFFF"
-        tools:ignore="MissingConstraints" />
-
-    <Button
         android:id="@+id/addBtn"
         android:layout_width="140dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="136dp"
         android:backgroundTint="#039BE5"
         android:text="Add Link"
         android:textSize="20sp"
@@ -116,5 +100,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/previewBtn"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginStart="308dp"
+        android:background="@drawable/ic_clear_24"
+        android:backgroundTint="#E53935"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/inputURL"
+        app:layout_constraintStart_toStartOf="@+id/inputURL"
+        app:layout_constraintTop_toTopOf="@+id/inputURL"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
