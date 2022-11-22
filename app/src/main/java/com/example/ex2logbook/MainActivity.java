@@ -74,13 +74,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         binding.addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String WebUrl = "(https?:\\/\\/.*\\.(?:png|jpg))";
-                
-
                 if (binding.inputURL.getText() != null && binding.inputURL.getText().toString().matches(WebUrl)){
                     String url = binding.inputURL.getText().toString();
                     if(!url.isEmpty()){
